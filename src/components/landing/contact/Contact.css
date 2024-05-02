@@ -25,6 +25,7 @@ img.contact-pantmaster-img {
   font-weight: 400;
   color: #403637;
   margin: 0px;
+  padding-bottom: 100px;
 }
 
 p.enterbeardverse {
@@ -48,12 +49,12 @@ p.enterbeardverse {
 
 @media screen and (max-width: 640px) {
   p.enterbeardverse {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   .contact-component {
     display: block;
-    height: 680px;
+    height: 780px;
   }
 }
 
