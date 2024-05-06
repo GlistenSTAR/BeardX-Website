@@ -2,13 +2,19 @@ import React from 'react';
 
 export default function HeroContentHeader() {
   return (
-    <div className='hero-content-header'>
-        <ul className='hero-content-header-menu'>
-            <li>About</li>
-            <li>Project</li>
-            <li>Tokenomics</li>
-            <li>Whitepaper</li>
-        </ul>
-    </div>
+    <ul className='hero-content-header-menu'>
+      <li>
+        <a href='#about'>About</a>
+      </li>
+      <li>
+        <a href='#Tokenomics'>Tokenomics</a>
+      </li>
+      <li>
+        <a href='#roadmap'>Roadmap</a>
+      </li>
+      <li>
+        <a href='#beardverse'>Beardverse</a>
+      </li>
+    </ul>
   );
 }

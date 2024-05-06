@@ -1,9 +1,10 @@
 .top-header {
-    background-color: #1E5558;
-    height: 113px;
+  background-color: #1e5558;
+  height: 113px;
+  z-index: 999999999 !important;
 }
 
 .footer {
-    background-color: #1E5558;
-    height: 113px;
+  background-color: #1e5558;
+  padding: 20px;
 }

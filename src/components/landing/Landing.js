@@ -1,10 +1,10 @@
 import React from 'react';
 
 import TopHeader from './layouts/TopHeader';
+import Footer from './layouts/Footer';
 import Hero from './hero/Hero';
 import MainContent from './mainContent/MainContent';
 import MainContentRow from './mainContent/MainContentRow';
-import Footer from './layouts/Footer';
 import Contact from './contact/Contact';
 
 export default function Landing() {
@@ -12,7 +12,7 @@ export default function Landing() {
     <div className='landing'>
       <TopHeader />
       <Hero />
-      <MainContent/>
+      <MainContent />
       <MainContentRow />
       <Contact />
       <Footer />

@@ -1,6 +1,4 @@
 .contact-component {
-  display: flex;
-  height: 798px;
   background-color: #001c43;
 }
 
@@ -17,50 +15,27 @@ img.contact-pantmaster-img {
   font-size: 30pt;
   font-weight: 800;
   color: #f35f41;
-  margin-bottom: 10px;
 }
 
 .contact-pantmaster-desc {
   font-size: 28pt;
   font-weight: 400;
-  color: #403637;
   margin: 0px;
-  padding-bottom: 100px;
 }
 
 p.enterbeardverse {
-  font-size: 96px;
+  font-size: 43px;
   font-weight: 800;
   color: #70c5be;
-  margin-top: 200px;
-}
-
-@media screen and (max-width: 920px) {
-  p.enterbeardverse {
-    font-size: 80px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  p.enterbeardverse {
-    font-size: 60px;
-  }
+  margin-bottom: 0px;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 640px) {
-  p.enterbeardverse {
-    margin-top: 70px;
-  }
-
   .contact-component {
     display: block;
     height: 780px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  p.enterbeardverse {
-    font-size: 50px;
   }
 }
 

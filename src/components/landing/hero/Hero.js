@@ -7,7 +7,7 @@ import "./Hero.css"
 
 export default function Hero() {
   return (
-    <div className='hero-component'>
+    <div className='hero-component' id="about">
         <HeroImage />
         <HeroContent />
     </div>
