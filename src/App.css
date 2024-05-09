@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   min-width: 380px;
-  color: rgb(255, 255, 255);
+  color: #403637;
 }
 
 .App-logo {
@@ -23,7 +23,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -37,35 +36,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-button.main-button {
-  padding: 10px 50px;
-  text-align: center;
-  border-radius: 38px;
-  font-size: 18pt;
-  font-weight: 800;
-}
-
-button.main-button.btn-primary {
-  background-color: #fe5f41;
-  color: #fff;
-  border: 2px solid #fe5f41;
-  transition: 0.5s;
-}
-
-button.main-button.btn-primary:hover {
-  color: #1e5558;
-  background-color: #fff;
-  background-image: radial-gradient(#fff 60%, #ddd 90%);
-  border-color: #fe5f41;
-  text-shadow: none;
-  box-shadow: none;
-}
-
-button.btn-disabled {
-  background-color: #fe6141a9;
-  text-align: center;
-  border-color: #fe6141a9 !important;
-  color: white;
 }

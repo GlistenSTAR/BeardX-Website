@@ -1,5 +1,5 @@
 .contact-component {
-  background-color: #001c43;
+  color: #fefde1;
 }
 
 .contact-pantmaster {
@@ -7,35 +7,41 @@
 }
 
 img.contact-pantmaster-img {
-  width: 27vw;
-  margin-top: 120px;
+  width: 300px;
+  margin-top: 20px;
 }
 
 .contact-pantmaster-title {
   font-size: 30pt;
   font-weight: 800;
   color: #f35f41;
+  margin-bottom: 0px;
 }
 
 .contact-pantmaster-desc {
   font-size: 28pt;
   font-weight: 400;
   margin: 0px;
+  color: #001c43;
+  margin-bottom: 20px;
 }
 
 p.enterbeardverse {
   font-size: 43px;
   font-weight: 800;
   color: #70c5be;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  margin: 0 0;
+  background-color: #001c43;
+}
+p.enterbeardverse:hover {
+  color: #fefde1;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 640px) {
   .contact-component {
     display: block;
-    height: 780px;
   }
 }
 
@@ -43,10 +49,15 @@ p.enterbeardverse {
   .contact-pantmaster-desc {
     font-size: 18pt;
   }
+  img.contact-pantmaster-img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 380px) {
-  img.contact-pantmaster-img {
-    width: 200px;
-  }
+}
+
+.beard_group {
+  display: flex;
+  flex-direction: column;
 }

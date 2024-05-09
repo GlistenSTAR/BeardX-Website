@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TopHeader from './layouts/TopHeader';
+import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import Hero from './hero/Hero';
 import MainContent from './mainContent/MainContent';
@@ -10,7 +10,7 @@ import Contact from './contact/Contact';
 export default function Landing() {
   return (
     <div className='landing'>
-      <TopHeader />
+      <Header />
       <Hero />
       <MainContent />
       <MainContentRow />
