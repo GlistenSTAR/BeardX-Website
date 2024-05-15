@@ -1,6 +1,7 @@
 import axios from 'axios';
-const API_KEY = 'J8K6R2WFA2PTG8X8KYQXFNJXA7JREHKPBK';
-const walletAddress = '0x0C0925cC75a91A0231fCB2704448Ee33994F0DB7';
+
+const API_KEY = process.env.REACT_APP_API_KEY;
+const walletAddress = process.env.REACT_APP_walletAddress;
 const baseUrl = 'https://api.bscscan.com/api';
 
 export async function getSoldAmount() {
