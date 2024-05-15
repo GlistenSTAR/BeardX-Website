@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './../../../assets/imgs/BeardX.png';
 import Modal from 'react-modal';
 import API from '../../../utils/API';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PrettyProgressbar from 'pretty-progressbar';
+
+import { getSoldAmount } from '../../../utils/bscScan';
 
 const customStyles = {
   content: {
@@ -22,11 +25,18 @@ export default function HeroContent() {
   const [emailError, setEmailError] = React.useState(false);
   const [walletError, setWalletError] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
+  const [soldAmount, setSoldAmount] = React.useState('');
   const [formData, setFormData] = React.useState({
     email: '',
     wallet: '',
     discord: '',
   });
+
+  useEffect(() => {
+    return async () => {
+      setSoldAmount(parseInt(await getSoldAmount()));
+    };
+  }, [soldAmount]);
 
   let { email, wallet, discord } = formData;
 
@@ -95,6 +105,23 @@ export default function HeroContent() {
           World’s first interoperable memecoin built on <br /> the
           groundbreaking Layer One X blockchain.
         </p>
+      </div>
+      <div className='progress'>
+        <p>NFT purchases</p>
+        <p>{soldAmount + '/' + '88'}</p>
+        <PrettyProgressbar
+          percentage={Math.round((soldAmount / 88) * 100)}
+          type='default'
+          label={true}
+          progressStyle={{ background: '#fe5f41' }}
+          progressbarStyle={{
+            display: 'inline-block',
+            margin: '9px',
+            width: '90%',
+            color: '#1e5558',
+            borderRadius: '20px',
+          }}
+        />
       </div>
       <div className='hero-content-action mt-5'>
         <div className='buttons'>
