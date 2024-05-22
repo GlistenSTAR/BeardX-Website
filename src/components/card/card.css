@@ -1,0 +1,29 @@
+.card {
+  height: 100px;
+  border-radius: 20px;
+  background-color: #fefde1;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+.card.blue {
+  background-color: #001c40;
+  color: white;
+  margin-left: 20px;
+}
+
+.card .content {
+  text-align: left;
+}
+.card .content .title {
+  font-size: 24px;
+}
+.card .content .main_content {
+  font-size: 32px;
+}
+.card .content .sub_content {
+  font-size: 18px;
+}

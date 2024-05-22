@@ -1,0 +1,91 @@
+.stacking {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet_connect {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  width: 100vw;
+}
+.wallet_connect .btn-primary,
+.wallet_connect .btn-disabled {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+.wallet_connect .btn-primary span {
+  padding-left: 10px;
+}
+
+.analysis {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.analysis .analysis_card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.analysis .bigcard {
+  height: 100px;
+  border-radius: 20px;
+  background-color: #fefde1;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.analysis .bigcard .bigcard_title {
+  font-size: 32px;
+  text-align: left;
+  width: 100%;
+  margin-left: 40px;
+}
+.analysis .bigcard .bigcard_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+  text-align: left;
+}
+.bigcard_content .title {
+  font-size: 14px;
+}
+.bigcard_content .content {
+  font-size: 24px;
+}
+
+.my_state {
+  width: 60%;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #fefde1;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.analysis .wifipant {
+  margin-top: 20px;
+}
+.main-button.btn-disabled.stake_beardx {
+  margin-top: 30px;
+}
+.main-button.btn-disabled.stake_wifpants {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.main-button.btn-disabled.stake_wifpants,
+.main-button.btn-disabled.stake_beardx {
+  width: 300px;
+}

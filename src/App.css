@@ -2,6 +2,7 @@
   text-align: center;
   min-width: 380px;
   color: #403637;
+  position: relative;
 }
 
 .App-logo {
@@ -36,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pretty-progress-bar{
+  z-index: 0!important;
 }

@@ -25,7 +25,7 @@ export default function HeroContent() {
   const [emailError, setEmailError] = React.useState(false);
   const [walletError, setWalletError] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
-  const [soldAmount, setSoldAmount] = React.useState('');
+  const [soldAmount, setSoldAmount] = React.useState(null);
   const [formData, setFormData] = React.useState({
     email: '',
     wallet: '',
@@ -33,10 +33,12 @@ export default function HeroContent() {
   });
 
   useEffect(() => {
-    return async () => {
-      setSoldAmount(parseInt(await getSoldAmount()));
-    };
-  }, [soldAmount]);
+    getSoldAmount()
+      .then((res) => {
+        setSoldAmount(parseInt(res));
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   let { email, wallet, discord } = formData;
 
@@ -126,9 +128,18 @@ export default function HeroContent() {
       <div className='hero-content-action mt-5'>
         <div className='buttons'>
           <div className='m-6'>
-            <button className='main-button btn-primary' onClick={openModal}>
-              Buy NFT
-            </button>
+            <div className='button-wrapper'>
+              <span className='dot dot-1'></span>
+              <span className='dot dot-2'></span>
+              <span className='dot dot-3'></span>
+              <span className='dot dot-4'></span>
+              <span className='dot dot-5'></span>
+              <span className='dot dot-6'></span>
+              <span className='dot dot-7'></span>
+              <button className='main-button btn-primary' onClick={openModal}>
+                Buy NFT
+              </button>
+            </div>
           </div>
           <div
             style={{

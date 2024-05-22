@@ -1,0 +1,33 @@
+
+svg.star {
+  z-index: 0;
+  position: absolute;
+  height: 600px;
+  right: 0;
+}
+
+
+.sparkles path {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: sparkle var(--duration) var(--delay) infinite ease-in-out;
+  fill: #f7b6a9;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(-1, 0);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,63 @@
+.contact-component {
+  color: #fefde1;
+}
+
+.contact-pantmaster {
+  background-color: #fff;
+}
+
+img.contact-pantmaster-img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.contact-pantmaster-title {
+  font-size: 30pt;
+  font-weight: 800;
+  color: #f35f41;
+  margin-bottom: 0px;
+}
+
+.contact-pantmaster-desc {
+  font-size: 28pt;
+  font-weight: 400;
+  margin: 0px;
+  color: #001c43;
+  margin-bottom: 20px;
+}
+
+p.enterbeardverse {
+  font-size: 43px;
+  font-weight: 800;
+  color: #70c5be;
+  padding: 20px 0;
+  margin: 0 0;
+  background-color: #001c43;
+}
+p.enterbeardverse:hover {
+  color: #fefde1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-component {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .contact-pantmaster-desc {
+    font-size: 18pt;
+  }
+  img.contact-pantmaster-img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+}
+
+.beard_group {
+  display: flex;
+  flex-direction: column;
+}
