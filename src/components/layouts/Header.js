@@ -20,7 +20,7 @@ export default function Header() {
         <a href='/#beardverse'>Beardverse</a>
       </li>
       <li>
-        <a href='/stacking'>Staking</a>
+        <a href='/staking'>Staking</a>
       </li>
 
       <div className='header_social_media'>
