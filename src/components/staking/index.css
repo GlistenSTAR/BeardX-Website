@@ -1,8 +1,10 @@
-.stacking {
+.staking {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .wallet_connect {
@@ -22,8 +24,11 @@
   padding-left: 10px;
 }
 
-.analysis {
+.staking_box {
   width: 70%;
+}
+
+.analysis {
   margin-bottom: 20px;
 }
 
@@ -74,7 +79,7 @@
   flex-direction: column;
 }
 
-.analysis .wifipant {
+.analysis .wifpants {
   margin-top: 20px;
 }
 .main-button.btn-disabled.stake_beardx {
@@ -88,4 +93,39 @@
 .main-button.btn-disabled.stake_wifpants,
 .main-button.btn-disabled.stake_beardx {
   width: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .staking_box {
+    width: 100%;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .analysis .analysis_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .analysis .bigcard .bigcard_title {
+    font-size: 24px;
+  }
+  .bigcard_content .title {
+    font-size: 14px;
+  }
+  .bigcard_content .content {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wallet_connect {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
 }
