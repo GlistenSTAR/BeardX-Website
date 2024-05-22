@@ -26,6 +26,7 @@ export async function getSoldAmount() {
       //   );
       //   console.log('---------------------------------------');
     });
+    console.log('value', value / 175)
     return value / 175;
   } catch (error) {
     console.error('Error:', error);
