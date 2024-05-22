@@ -3,11 +3,11 @@
   border-radius: 20px;
   background-color: #fefde1;
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
   margin: 20px 0;
+  width: 50%;
 }
 .card.blue {
   background-color: #001c40;
@@ -26,4 +26,28 @@
 }
 .card .content .sub_content {
   font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+  .card.blue {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .card .content .title {
+    font-size: 16px;
+  }
+  .card .content .main_content {
+    font-size: 24px;
+  }
+  .card .content .sub_content {
+    font-size: 14px;
+  }
 }
